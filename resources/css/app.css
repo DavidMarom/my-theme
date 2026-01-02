@@ -1,14 +1,14 @@
-@import "tailwindcss" theme(static);
+@import "tailwindcss";
 @source "../views/";
 @source "../../app/";
 
-/* Red theme base styles */
+/* Base styles */
 body {
-  @apply bg-red-900 text-gray-100;
+  @apply text-gray-100;
 }
 
 html {
-  @apply bg-red-900;
+  @apply bg-gray-900;
 }
 
 /* Navigation menu styling */
@@ -22,7 +22,7 @@ html {
 }
 
 .nav-primary a {
-  @apply text-red-100 hover:text-white transition-colors no-underline;
+  @apply text-gray-100 hover:text-white transition-colors no-underline;
 }
 
 /* Post navigation styling */
@@ -52,11 +52,37 @@ a {
 input[type="search"],
 input[type="text"],
 textarea {
-  @apply bg-red-800 border border-red-700 text-gray-100 rounded px-4 py-2;
+  @apply bg-gray-800 border border-gray-700 text-gray-100 rounded px-4 py-2;
 }
 
 input[type="search"]:focus,
 input[type="text"]:focus,
 textarea:focus {
   @apply outline-none border-blue-500;
+}
+
+/* Photo at bottom of screen */
+img.bottom-photo,
+.bottom-photo img,
+footer img,
+body > img:last-of-type {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  object-fit: cover;
+  object-position: bottom;
+  z-index: 0;
+  max-height: 30vh;
+}
+
+/* Ensure content is above the photo */
+#app {
+  position: relative;
+  z-index: 10;
+}
+
+body {
+  position: relative;
 }
