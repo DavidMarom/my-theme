@@ -2,9 +2,13 @@
 @source "../views/";
 @source "../../app/";
 
-/* Dark theme base styles */
+/* Red theme base styles */
 body {
-  @apply bg-gray-900 text-gray-100;
+  @apply bg-red-900 text-gray-100;
+}
+
+html {
+  @apply bg-red-900;
 }
 
 /* Navigation menu styling */
@@ -18,7 +22,7 @@ body {
 }
 
 .nav-primary a {
-  @apply text-gray-300 hover:text-white transition-colors no-underline;
+  @apply text-red-100 hover:text-white transition-colors no-underline;
 }
 
 /* Post navigation styling */
@@ -48,7 +52,7 @@ a {
 input[type="search"],
 input[type="text"],
 textarea {
-  @apply bg-gray-800 border border-gray-700 text-gray-100 rounded px-4 py-2;
+  @apply bg-red-800 border border-red-700 text-gray-100 rounded px-4 py-2;
 }
 
 input[type="search"]:focus,

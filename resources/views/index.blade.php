@@ -10,10 +10,10 @@
 
     <div class="space-y-8">
       @while(have_posts()) @php(the_post())
-        <article class="bg-gray-800 rounded-lg p-6 hover:bg-gray-750 transition-colors">
+        <article class="bg-red-800 rounded-lg p-6 hover:bg-red-700 transition-colors">
           <h2 class="text-2xl font-semibold mb-3 text-white">
             <a href="{{ get_permalink() }}" class="hover:text-gray-300 transition-colors">
-              {!! $title !!}
+              {!! get_the_title() !!}
             </a>
           </h2>
           <div class="text-gray-400 text-sm mb-4">

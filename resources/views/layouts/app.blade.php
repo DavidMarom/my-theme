@@ -9,10 +9,10 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 
-  <body @php(body_class('bg-gray-900 text-gray-100'))>
+  <body @php(body_class('bg-red-900 text-gray-100'))>
     @php(wp_body_open())
 
-    <div id="app" class="min-h-screen">
+    <div id="app" class="min-h-screen bg-red-900">
       <a class="sr-only focus:not-sr-only" href="#main">
         {{ __('Skip to content', 'sage') }}
       </a>

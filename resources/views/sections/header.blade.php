@@ -1,4 +1,4 @@
-<header class="bg-gray-800 border-b border-gray-700">
+<header class="bg-red-800 border-b border-red-700">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
     <a class="text-xl font-bold text-white hover:text-gray-300 transition-colors" href="{{ home_url('/') }}">
       {!! $siteName !!}
