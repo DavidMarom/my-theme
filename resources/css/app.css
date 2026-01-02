@@ -1,0 +1,58 @@
+@import "tailwindcss" theme(static);
+@source "../views/";
+@source "../../app/";
+
+/* Dark theme base styles */
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Navigation menu styling */
+.nav-primary ul,
+.nav-primary ul.menu {
+  @apply flex space-x-6 list-none m-0 p-0;
+}
+
+.nav-primary ul li {
+  @apply list-none;
+}
+
+.nav-primary a {
+  @apply text-gray-300 hover:text-white transition-colors no-underline;
+}
+
+/* Post navigation styling */
+.post-navigation,
+.posts-navigation {
+  @apply flex justify-center space-x-4 mt-8;
+}
+
+.post-navigation a,
+.posts-navigation a {
+  @apply text-gray-400 hover:text-white transition-colors px-4 py-2 rounded;
+}
+
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
+  @apply text-gray-400 hover:text-white transition-colors;
+}
+
+/* Links */
+a {
+  @apply text-blue-400 hover:text-blue-300 transition-colors;
+}
+
+/* Form elements */
+input[type="search"],
+input[type="text"],
+textarea {
+  @apply bg-gray-800 border border-gray-700 text-gray-100 rounded px-4 py-2;
+}
+
+input[type="search"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  @apply outline-none border-blue-500;
+}
